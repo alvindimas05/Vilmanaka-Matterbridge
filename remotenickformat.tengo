@@ -1,0 +1,13 @@
+new_protocol := ""
+
+if channel == "120363320232619257@g.us" {
+    new_protocol = "WHATSAPP"
+}
+if channel == "ID:1268598612083085434" {
+    new_protocol = "DISCORD"
+} 
+if channel == "api" {
+    new_protocol = "MINECRAFT"
+}
+
+result = "[" + new_protocol + "] " + nick
