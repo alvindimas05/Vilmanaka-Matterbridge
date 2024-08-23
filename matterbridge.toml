@@ -6,11 +6,11 @@ AutoWebhooks=true
 RemoteNickFormat="{TENGO}: "
 PreserveThreading=true
 
-#[whatsapp.protocol]
-#Number="+62xxx"
-#SessionFile="session-62xxx.gob"
-#QrOnWhiteTerminal=false
-#RemoteNickFormat="{TENGO}: "
+[whatsapp.protocol]
+Number="+62xxx"
+SessionFile="session-whatsapp"
+QrOnWhiteTerminal=false
+RemoteNickFormat="{TENGO}: "
 
 [tengo]
 RemoteNickFormat="remotenickformat.tengo"
@@ -29,9 +29,9 @@ enable=true
 account="discord.protocol"
 channel="ID:1268598612083085434"
 
-#[[gateway.inout]]
-#account="whatsapp.protocol"
-#channel="120363320232619257@g.us"
+[[gateway.inout]]
+account="whatsapp.protocol"
+channel="120363320232619257@g.us"
 
 [[gateway.inout]]
 account="api.minecraft"
