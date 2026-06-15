@@ -1,9 +1,9 @@
 new_protocol := ""
 
-if channel == "120363320232619257@g.us" {
+if channel == "120363320232619257@g.us" || channel == "120363315568780319@g.us" {
     new_protocol = "WHATSAPP"
 }
-if channel == "ID:1268598612083085434" {
+if channel == "ID:1268598612083085434" || channel == "ID:1265687004708999240" {
     new_protocol = "DISCORD"
 } 
 if channel == "api" {
