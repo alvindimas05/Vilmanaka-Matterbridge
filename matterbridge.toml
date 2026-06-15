@@ -1,6 +1,6 @@
 [discord]
 [discord.protocol]
-Token="xxx"
+Token="MTI2ODU5OTAyNTcyOTUzNjAyMA.GAgUrm.rHLw2hvte14s4qBf1BzbboZy-9R7uyq48t7EJs"
 Server="1265341173439008809"
 AutoWebhooks=true
 RemoteNickFormat="{TENGO}: "
@@ -21,8 +21,9 @@ BindAddress="0.0.0.0:4242"
 Buffer=1000
 RemoteNickFormat="{TENGO}: "
 
+# Server bridge
 [[gateway]]
-name="gateway"
+name="server-bridge"
 enable=true
 
 [[gateway.inout]]
@@ -36,3 +37,17 @@ channel="120363320232619257@g.us"
 [[gateway.inout]]
 account="api.minecraft"
 channel="api"
+
+# Chat bridge
+[[gateway]]
+name="chat-bridge"
+enable=true
+
+[[gateway.inout]]
+account="discord.protocol"
+channel="ID:1265687004708999240"
+
+[[gateway.inout]]
+account="whatsapp.protocol"
+channel="120363315568780319@g.us"
+root@iZt4na49qwpm3y94zzpp74Z:~/Vilmanaka-Matterbridge# 
